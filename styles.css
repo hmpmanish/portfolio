@@ -2,9 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
-/* #hmpmanish*/
 
 /* Body Styling */
 body {  
@@ -13,8 +12,8 @@ body {
     background-color: #f4f4f4;
     color: #333;
     transition: background-color 0.3s ease;
-    padding-top: 60px;  /* To prevent content from being hidden under the header */
-    padding-bottom: 60px; /* To prevent content from being hidden under the footer */
+    padding-top: 60px; /* Prevent content from being hidden under the header */
+    padding-bottom: 60px; /* Prevent content from being hidden under the footer */
 }
 
 /* Dark Mode Styling */
@@ -26,7 +25,6 @@ body.dark-mode {
 header.dark-mode {
     background-color: #222;
 }
-/* #hmpmanish*/
 
 /* Header Styling */
 header {
@@ -37,14 +35,14 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed; /* Makes the header fixed */
-    top: 0; /* Positions the header at the top */
-    left: 0; /* Ensures header spans the full width */
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Makes sure header stays above content */
+    z-index: 1000; /* Ensures header stays above content */
     transition: background-color 0.3s ease;
 }
-/* #hmpmanish*/
 
+/* Header Logo */
 header .logo {
     display: flex;
     align-items: center;
@@ -70,7 +68,6 @@ header .logo:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-/* #hmpmanish*/
 
 /* Navigation Menu */
 nav ul {
@@ -93,18 +90,17 @@ nav ul li a:hover {
     color: #0077B5;
     box-shadow: 0 0 10px rgba(0, 119, 181, 0.7); /* Adds subtle shadow on hover */
 }
-/* #hmpmanish*/
 
 /* Social Links Styling - Multi-line Layout */
 .social-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px; /* Space between items */
+    gap: 15px;
 }
 
 .social-links .social-item {
-    margin: 10px; /* Space around each item */
+    margin: 10px;
 }
 
 .social-links a {
@@ -118,7 +114,6 @@ nav ul li a:hover {
     color: #ff4081; /* Change color on hover */
     transform: scale(1.2); /* Scale up the icon */
 }
-/* #hmpmanish*/
 
 /* Footer Styling */
 footer {
@@ -126,26 +121,27 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed; /* Makes the footer fixed */
-    bottom: 0; /* Positions the footer at the bottom */
-    left: 0; /* Ensures footer spans the full width */
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    z-index: 1000; /* Makes sure footer stays above content */
+    z-index: 1000;
 }
 
 /* Main Section Styling */
 main {
     padding: 40px;
     text-align: center;
-    margin-top: 80px; /* Gives space for the fixed header */
+    margin-top: 80px; /* Space for the fixed header */
 }
-/* #hmpmanish*/
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header */
     header {
         flex-direction: column;
         text-align: center;
+        padding: 10px;
     }
 
     nav ul {
@@ -156,8 +152,21 @@ main {
     nav ul li {
         margin: 10px 0;
     }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    /* Main Section */
+    main {
+        padding: 20px;
+    }
+
+    /* Social Links */
+    .social-links {
+        flex-direction: column;
+    }
 }
-/* #hmpmanish*/
 
 /* Parallax Background */
 .parallax {
@@ -179,7 +188,6 @@ main {
     font-size: 3rem;
     font-weight: bold;
 }
-/* #hmpmanish*/
 
 /* Loading Spinner */
 .loading-overlay {
@@ -213,7 +221,6 @@ main {
 html {
     scroll-behavior: smooth;
 }
-/* #hmpmanish*/
 
 /* Scroll Animations */
 .fade-in {
@@ -224,7 +231,6 @@ html {
 .fade-in.visible {
     opacity: 1;
 }
-/* #hmpmanish*/
 
 /* Dark Mode Toggle Button */
 #dark-mode-toggle {
@@ -235,15 +241,9 @@ html {
     cursor: pointer;
 }
 
-/* #hmpmanish*/
-/* Add transitions for smooth color changes  */
+/* Add transitions for smooth color changes */
 body, header {
     transition: background-color 0.3s, color 0.3s;
-}
-
-/* JavaScript for Toggle Dark Mode #hmpmanish */
-#dark-mode-toggle {
-    margin-top: 10px;
 }
 
 /* Logo Animation */
