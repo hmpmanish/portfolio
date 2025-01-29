@@ -3,133 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Maintenance | Manish Pandey</title>
+    <title>Awards & Achievements - Manish Pandey</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
-            color: #333;
-            text-align: center;
-        }
-        .maintenance-message {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 60%;
-        }
-        .maintenance-message h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .maintenance-message p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .back-home {
-            text-decoration: none;
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: background-color 0.3s;
-        }
-        .back-home:hover {
-            background-color: #555;
-        }
-
-        /* Mobile Navigation */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 10px;
-        }
-        .logo {
-            color: white;
-            font-size: 1.5em;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-        }
-        .nav-links li {
-            margin-right: 20px;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-        .menu-toggle {
-            display: none;
-            background-color: #333;
-            color: white;
-            font-size: 2em;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Mobile view */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                align-items: center;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .nav-links li {
-                margin: 10px 0;
-            }
-        }
-    </style>
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">Manish Pandey</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="awards.html">Awards</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
-        <button class="menu-toggle">☰</button>
-    </nav>
-</header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.webp" alt="Logo"></a>
+        </div>
+        
 
-<main>
-    <div class="maintenance-message">
-        <h1>We're Currently Under Maintenance</h1>
-        <p>Our website is undergoing updates and will be back online soon. We apologize for the inconvenience!</p>
-        <p>Please check back later.</p>
-        <a href="index.html" class="back-home">Back to Home</a>
-    </div>
-</main>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<script>
-    // JavaScript for mobile menu toggle
-    document.querySelector(".menu-toggle").addEventListener("click", function() {
-        const navLinks = document.querySelector(".nav-links");
-        navLinks.classList.toggle("active");
-    });
-</script>
+    <main>
+        <section>
+            <h1>Awards & Achievements</h1>
+            <p>Currently, no awards or achievements to show. Please check back later for updates.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manish Pandey. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/hmpmanish" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://linkedin.com/in/hmpmanish" target="_blank" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://facebook.com/hmpmanish" target="_blank" class="social-icon facebook">Facebook</a>
+            <a href="https://x/hmpmanish" target="_blank" class="social-icon x">X (formerly Twitter)</a>
+            <a href="https://github.com/hmpmanish" target="_blank" class="social-icon github">GitHub</a>
+        </div>
+    </footer>
 
 </body>
 </html>

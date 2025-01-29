@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Manish Pandey</title>
+    <title>Contact - Manish Pandey</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <nav class="navbar">
-            <div class="logo">Manish Pandey</div>
-            <ul class="nav-links">
+        <div class="logo">
+            <a href="index.html"><img src="logo.webp" alt="Logo"></a>
+        </div>
+        
+
+        <nav>
+            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="awards.html">awards</a></li>
-                
-                <li><a href="portfolio.html">services</a></li>
-                <li><a href="services.html">services</a></li>
-
-
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
             </ul>
-            <button class="menu-toggle">☰</button>
         </nav>
     </header>
 
+
     <main>
-        <h1>Contact Me</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
+        <section>
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to get in touch, feel free to contact me using the form below:</p>
+            
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
 
-            <label for="message">Message:</label>
-            <textarea id="message" required></textarea>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
 
-            <button type="submit">Send</button>
-            <p id="form-message"></p>
-        </form>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Manish Pandey. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/hmpmanish" target="_blank" class="social-icon instagram">Instagram</a>
+            <a href="https://linkedin.com/in/hmpmanish" target="_blank" class="social-icon linkedin">LinkedIn</a>
+            <a href="https://facebook.com/hmpmanish" target="_blank" class="social-icon facebook">Facebook</a>
+            <a href="https://x/hmpmanish" target="_blank" class="social-icon x">X (formerly Twitter)</a>
+            <a href="https://github.com/hmpmanish" target="_blank" class="social-icon github">GitHub</a>
+        </div>
+    </footer>
+
 </body>
 </html>
