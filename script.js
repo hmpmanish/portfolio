@@ -1,15 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector("nav ul");
-
-    menuToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("active");
-    });
-
-    // Dark Mode Toggle
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
-    darkModeToggle.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        document.querySelector("header").classList.toggle("dark-mode");
-    });
+// 🎯 Dark Mode Toggle
+const toggleBtn = document.getElementById("dark-mode-toggle");
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
 });
