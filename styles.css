@@ -122,8 +122,11 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    header {
+        padding: 10px 15px;
+    }
+
     nav ul {
-        display: none;
         flex-direction: column;
         background: #333;
         width: 100%;
@@ -131,6 +134,7 @@ footer {
         top: 60px;
         left: 0;
         text-align: center;
+        display: none;
         z-index: 999;
     }
 
@@ -144,6 +148,24 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+
+    /* Main Section Adjustments */
+    main {
+        padding: 80px 15px 20px;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        border-radius: 15px;
+        margin-top: 70px; /* Prevents overlap with header */
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    /* Social Icons Adjustments */
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
